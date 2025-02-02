@@ -19,8 +19,8 @@ dispatch(userLoggedin())
   return (
     <Routes>
         <Route  index  path="/" element={<AuthPage />} />
-        <Route index  path="/signin" element={<SignIn />} />
-        <Route  index path="/login" element={<Login />} />
+        <Route   path="/signin" element={<SignIn />} />
+        <Route   path="/login" element={<Login />} />
 
         {!isAuthenticated && <Route path="/" element={<AuthPage />} />}
         {isAuthenticated && <Route  path='/invoice' element={<Home/>}/>}
